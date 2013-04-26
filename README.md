@@ -18,13 +18,17 @@ Wouter de Vos and the Springest team made [a new version](http://devblog.springe
 
 So you have two options:
 
-1. Install [the `idid` gem](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem), configure it, and make a Alfred 2 workflow that just sends your 'idid' or 'idone' Alfred query through to the command line, like in this screenshot:
+### Use the Gem
+
+Install [the `idid` gem](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem), configure it, and make a Alfred 2 workflow that just sends your 'idid' or 'idone' Alfred query through to the command line, like in this screenshot:
   
   ![Screen Shot 2013-04-25 at 9 18 03pm](https://f.cloud.github.com/assets/200641/429444/5ec3dfc2-ae44-11e2-8936-248a48dd81c9.PNG)
 
-  Now you can call up Alfred, type 'idid foo bar baz' and the text after 'idid' will be sent through the gem.
+  Now you can call up Alfred, type `idid foo bar baz` and the text after `idid` will be sent through the gem.
 
-2. The simpler option is to copy over the basic PHP code from the old iAlfredThis into the new Alfred 2 workflow system. Just set up a workflow that runs a PHP script like this when you invoke the `idid` (or `idone`) keyword:
+### Use A Bit of PHP
+
+The simpler option is to copy over the basic PHP code from the old iAlfredThis into the new Alfred 2 workflow system. Just set up a workflow that runs a PHP script like this when you invoke the `idid` (or `idone`) keyword:
   
   ![Screen Shot 2013-04-25 at 9 39 27pm](https://f.cloud.github.com/assets/200641/429461/533914d2-ae45-11e2-82dd-45842abd95b2.PNG)
 
