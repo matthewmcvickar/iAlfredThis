@@ -2,13 +2,9 @@
 
 Send finished tasks to iDoneThis using Alfred.
 
----
-
 ## For Alfred 1
 
 If you are still using Alfred 1, please see the [explanation, documentation, and installation instructions on the original iAlfredThis creator's blog](http://devblog.springest.com/alfred-app-idonethis-for-logging-your-todos-gtd-style).
-
----
 
 ## For Alfred 2
 
