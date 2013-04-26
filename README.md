@@ -22,7 +22,7 @@ This option merely passes through the text after your `idone` or `idid` keyword 
 
 1. [Download this repository.](https://github.com/matthewmcvickar/iAlfredThis/archive/master.zip)
 
-1. Double-click the `iAlfredThis Via idid Gem.alfredworkflow` file inside the `For Alfred 2` folder.
+1. Double-click the `iAlfredThis Via idid Gem.alfredworkflow` file inside the `For Alfred 2` folder. Click the **Import** button.
 
 You should be all set. Double click on the pieces of the workflow to see how it works.
 
