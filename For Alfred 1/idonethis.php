@@ -17,3 +17,4 @@ if($argumentCount > 3) {
 $subject = 'Re: '. $subjectIdentifier . ' digest for ' . date("F d");
 
 mail($to, $subject, $message, $headers);
+?>

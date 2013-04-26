@@ -1,46 +1,49 @@
 # iAlfredThis
 
-Send finished tasks to iDoneThis throughout the day using Alfred.
-
-[Explanation, documentation, and installation instructions on the creator's blog.](http://devblog.springest.com/alfred-app-idonethis-for-logging-your-todos-gtd-style)
-
-**The code in this repository is for Alfred 1 and will not work with Alfred 2 without adjustments.**
-
-## For Alfred 2
-
-This doesn't work as-is with Alfred 2 because of the new Workflow architecture. But it does work with some minor adjustments. In addition, the creators of the original iAlfredThis have created [a Ruby gem called `idid`](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem) which they use to send tasks to iDoneThis directly from the command line. You can use that or use an adaptation of the old PHP method.
-
-In either case, I have written [instructions for getting iAlfredThis to work with Alfred 2](https://github.com/wouter-de-boer/iAlfredThis/issues/3) in the comments on an Issue in the original iAlfredThis repository, but am including them here in full, just in case Wouter de Boer decides to delete his repository or someone stumbles upon this first.
+Send finished tasks to iDoneThis using Alfred.
 
 ---
 
-Wouter de Vos and the Springest team made [a new version](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem) of their iDoneThis utility as a gem that works on the command line. [The gem is on GitHub](https://github.com/foxycoder/idid) as well.
+## For Alfred 1
 
-So you have two options:
+If you are still using Alfred 1, please see the [explanation, documentation, and installation instructions on the original iAlfredThis creator's blog](http://devblog.springest.com/alfred-app-idonethis-for-logging-your-todos-gtd-style).
 
-### Use the Gem
+---
 
-Install [the `idid` gem](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem), configure it, and make a Alfred 2 workflow that just sends your 'idid' or 'idone' Alfred query through to the command line, like in this screenshot:
-  
-  ![Screen Shot 2013-04-25 at 9 18 03pm](https://f.cloud.github.com/assets/200641/429444/5ec3dfc2-ae44-11e2-8936-248a48dd81c9.PNG)
+## For Alfred 2
 
-  Now you can call up Alfred, type `idid foo bar baz` and the text after `idid` will be sent through the gem.
+The original iAlfredThis doesn't work out of the box with Alfred 2 because of the new Workflow architecture.
 
-### Use A Bit of PHP
+The creators of the original iAlfredThis have created [a Ruby gem called `idid`](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem) which they use to send tasks to iDoneThis directly from the command line.
 
-The simpler option is to copy over the basic PHP code from the old iAlfredThis into the new Alfred 2 workflow system. Just set up a workflow that runs a PHP script like this when you invoke the `idid` (or `idone`) keyword:
-  
-  ![Screen Shot 2013-04-25 at 9 39 27pm](https://f.cloud.github.com/assets/200641/429461/533914d2-ae45-11e2-82dd-45842abd95b2.PNG)
+So: you can use that gem (with or without Alfred) or use an adaptation of the old PHP method (without the gem).
 
-  The PHP code you need is:
-  ```
-  $to = 'today@idonethis.com';
-  $subject = 'Re: Personal digest for ' . date("F d");
-  $message = {query};
-  $headers = "From: YOUR_IDONETHIS_EMAIL_ADDRESS \r\n";
+### Option A: Use the Gem
 
-  mail($to, $subject, $message, $headers);
-  ```
-  The only thing you need to customize there is the email address, which should be the exact same as the one with which  you'd respond to an iDoneThis daily checkin email.
+This option merely passes through the text after your `idone` or `idid` keyword in Alfred  to the `idid` gem.
 
-  (I chose this method myself because I don't need the functionality of the `idid` gem or team/project capabilities; I only use it for sending iDoneThis records to my personal iDoneThis account.)
+1. Install [the `idid` gem](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem) and configure it.
+
+1. [Download this repository.](https://github.com/matthewmcvickar/iAlfredThis/archive/master.zip)
+
+1. Double-click the `iAlfredThis Via idid Gem.alfredworkflow` file inside the `For Alfred 2` folder.
+
+You should be all set. Double click on the pieces of the workflow to see how it works.
+
+### Option B: Use a Bit of PHP
+
+This option uses the PHP `mail` command (taken from the original iAlfredThis) triggered directly from Alfred's 'Run Script' workflow action. It requires you to input your iDoneThis email address for it to work correctly.
+
+1. [Download this repository.](https://github.com/matthewmcvickar/iAlfredThis/archive/master.zip)
+
+1. Double-click the `iAlfredThis.alfredworkflow` file inside the `For Alfred 2` folder. Click the **Import** button.
+
+1. Double-click on the middle piece of the three-part workflow, the one labeled '/usr/bin/php [script icon] Run Script'.
+
+1. In the window that appears, replace `YOUR_IDONETHIS_EMAIL_ADDRESS` on the fourth line with your iDoneThis email address (the exact same one with which  you would respond to an iDoneThis daily checkin email).
+
+1. Click the **Save** button.
+
+You should be all set!
+
+I prefer this method myself because I don't need the functionality of the `idid` gem or team/project capabilities; I only use it for sending iDoneThis records to my personal iDoneThis account. (Furthermore, configuring the gem is a slightly confusing, mostly because it requires you to manually set a mail server from which to deliver the message.)
