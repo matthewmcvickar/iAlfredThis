@@ -10,7 +10,7 @@ Send finished tasks to iDoneThis throughout the day using Alfred.
 
 This doesn't work as-is with Alfred 2 because of the new Workflow architecture. But it does work with some minor adjustments. In addition, the creators of the original iAlfredThis have created [a Ruby gem called `idid`](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem) which they use to send tasks to iDoneThis directly from the command line. You can use that or use an adaptation of the old PHP method.
 
-In either case, I have written [instructions for getting iAlfredThis to work with Alfred 2](https://github.com/wouter-de-boer/iAlfredThis/issues/3), which are duplicated here in case Wouter de Boer decides to delete his repository.
+In either case, I have written [instructions for getting iAlfredThis to work with Alfred 2](https://github.com/wouter-de-boer/iAlfredThis/issues/3) in the comments on an Issue in the original iAlfredThis repository, but am including them here in full, just in case Wouter de Boer decides to delete his repository or someone stumbles upon this first.
 
 ---
 
