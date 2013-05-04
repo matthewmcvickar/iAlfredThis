@@ -34,9 +34,21 @@ This option uses the PHP `mail` command (taken from the original iAlfredThis) tr
 
 1. Double-click the `iAlfredThis.alfredworkflow` file inside the `For Alfred 2` folder. Click the **Import** button.
 
-1. Double-click on the middle piece of the three-part workflow, the one labeled '/usr/bin/php [script icon] Run Script'.
+1. Double-click on the middle piece of the three-part workflow, the one labeled '/usr/bin/php [script icon] Run Script'. In the window that appears, make two adjustments:
 
-1. In the window that appears, replace `YOUR_IDONETHIS_EMAIL_ADDRESS` on the fourth line with your iDoneThis email address (the exact same one with which  you would respond to an iDoneThis daily checkin email).
+1. Set your time zone so that the system's PHP installation doesn't complain and refuse to run the script. Replace `YOUR_TIME_ZONE` with the timezone matching your city--see the [full list here](http://www.php.net/manual/en/timezones.php).
+
+  - For quick reference, America's time zones:
+
+      EST: `America/New York`  
+      CDT: `America/Chicago`  
+      MDT: `America/Boise`  
+      MST: `America/Phoenix`  
+      PDT: `America/Los_Angeles`  
+      AKDT: `America/Juneau`  
+      HST: `Pacific/Honolulu`
+ 
+1. Replace `YOUR_IDONETHIS_EMAIL_ADDRESS` with your iDoneThis email address (the exact same one with which  you would respond to an iDoneThis daily checkin email).
 
 1. Click the **Save** button.
 
