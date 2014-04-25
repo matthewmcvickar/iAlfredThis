@@ -32,19 +32,8 @@ It's a limited approach, but until iDoneThis releases an API, it's the only way 
 
 1. Double-click the `iAlfredThis.alfredworkflow` file inside the `For Alfred 2` folder. Click the **Import** button.
 
-1. Double-click on the middle piece of the three-part workflow, the one labeled '/usr/bin/php [script icon] Run Script'. In the window that appears, make two adjustments:
+1. Double-click on the middle piece of the three-part workflow, the one labeled '/usr/bin/osascript [script icon] Run Script'. In the window that appears, make two adjustments:
 
-1. Set your timezone so that the system's PHP installation doesn't complain and refuse to run the script. Replace `YOUR_TIME_ZONE` with the timezone matching your city--see the [full list here](http://www.php.net/manual/en/timezones.php).
-  - For quick reference, America's time zones (you want to copy and paste the `Region/City` string, not the timezone abbreviation):
-
-      Eastern: `America/New_York`  
-      Central: `America/Chicago`  
-      Mountain Daylight: `America/Boise`  
-      Mountain Standard: `America/Phoenix`  
-      Pacific: `America/Los_Angeles`  
-      Alaska: `America/Juneau`  
-      Hawaii: `Pacific/Honolulu`
- 
 1. Replace `YOUR_IDONETHIS_EMAIL_ADDRESS` with your email address (the exact same one with which you would respond to an iDoneThis daily checkin email).
 
 1. Click the **Save** button.
