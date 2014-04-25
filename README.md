@@ -32,7 +32,7 @@ It's a limited approach, but until iDoneThis releases an API, it's the only way 
 
 1. Double-click the `iAlfredThis.alfredworkflow` file inside the `For Alfred 2` folder. Click the **Import** button.
 
-1. Double-click on the middle piece of the three-part workflow, the one labeled '/usr/bin/osascript [script icon] Run Script'. In the window that appears, make two adjustments:
+1. Double-click on the middle piece of the three-part workflow, the one labeled '/usr/bin/osascript [script icon] Run Script'. In the window that appears, make just one adjustment:
 
 1. Replace `YOUR_IDONETHIS_EMAIL_ADDRESS` with your email address (the exact same one with which you would respond to an iDoneThis daily checkin email).
 
