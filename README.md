@@ -17,6 +17,8 @@ The original iAlfredThis doesn't work out of the box with Alfred 2 because of th
 
 This workflow uses AppleScript to control Apple's Mail.app (the default email application on OS X).
 
+(The `iAlfredThis.scpt` in the root of this repository is a copy of the Applescript used in the Alfred plugin binary.)
+
 Sending email via the built-in `sendmail` command (via Postfix) requires a lot of setup on OS X. The system PHP also cannot send mail without additional setup. So AppleScript is the easiest approach, even though it requires you to use Mail.app and pollutes your 'Sent' mailbox with individual iDoneThis emails.
 
 If you don't use Mail.app, the AppleScript contained in the plugin can theoretically be altered to control another piece of email software that has AppleScript support.
