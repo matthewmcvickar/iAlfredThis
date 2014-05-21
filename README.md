@@ -3,17 +3,7 @@
 Send finished tasks to iDoneThis using Alfred.
 
 
-## For Alfred 1
-
-If you are still using Alfred 1, please see the [explanation, documentation, and installation instructions on the original iAlfredThis creator's blog](http://devblog.springest.com/alfred-app-idonethis-for-logging-your-todos-gtd-style).
-
-
-## For Alfred 2
-
-The original iAlfredThis doesn't work out of the box with Alfred 2 because of the new Workflow architecture.
-
-
-### Methodology
+## Methodology
 
 This workflow uses AppleScript to control Apple's Mail.app (the default email application on OS X).
 
@@ -28,11 +18,11 @@ If you don't want extra iDoneThis emails in your sent box, you'll have to delete
 It's a limited approach, but until iDoneThis releases an API, it's the only way I could get this to work with minimal setup.
 
 
-### Setup Instructions
+## Setup Instructions
 
 1. [Download this repository.](https://github.com/matthewmcvickar/iAlfredThis/archive/master.zip)
 
-1. Double-click the `iAlfredThis.alfredworkflow` file inside the `For Alfred 2` folder. Click the **Import** button.
+1. Double-click the `iAlfredThis.alfredworkflow` file. Click the **Import** button.
 
 1. Double-click on the middle piece of the three-part workflow, the one labeled '/usr/bin/osascript [script icon] Run Script'. In the window that appears, make just one adjustment:
 
@@ -44,7 +34,7 @@ You should be all set!
 
 ---
 
-### Another Option: Use the Gem
+## Another Option: Use the Gem
 
 The creators of the original iAlfredThis have created [a Ruby gem called `idid`](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem) which they use to send tasks to iDoneThis directly from the command line.
 
@@ -56,6 +46,12 @@ This option merely passes through the text after your `idone` or `idid` keyword 
 
 1. [Download this repository.](https://github.com/matthewmcvickar/iAlfredThis/archive/master.zip)
 
-1. Double-click the `iAlfredThis Via idid Gem.alfredworkflow` file inside the `For Alfred 2` folder. Click the **Import** button.
+1. Double-click the `iAlfredThis Via idid Gem.alfredworkflow` file. Click the **Import** button.
 
 You should be all set. Double click on the pieces of the workflow to see how it works.
+
+---
+
+## Using Alfred 1?
+
+Support for Alfred 1 has been removed. If you are still using Alfred 1, please see the [explanation, documentation, and installation instructions on the original iAlfredThis creator's blog](http://devblog.springest.com/alfred-app-idonethis-for-logging-your-todos-gtd-style).
