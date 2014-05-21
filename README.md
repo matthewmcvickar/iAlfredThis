@@ -52,4 +52,4 @@ You should be all set. Double click on the pieces of the workflow to see how it 
 
 ## Using Alfred 1?
 
-Support for Alfred 1 has been removed. If you are still using Alfred 1, please see the [explanation, documentation, and installation instructions on the original iAlfredThis creator's blog](http://devblog.springest.com/alfred-app-idonethis-for-logging-your-todos-gtd-style).
+Support for Alfred 1 has been removed because I can no longer test it. If you are still using Alfred 1, please see the [explanation, documentation, and installation instructions on the original iAlfredThis creator's blog](http://devblog.springest.com/alfred-app-idonethis-for-logging-your-todos-gtd-style).
