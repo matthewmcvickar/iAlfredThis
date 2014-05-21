@@ -1,3 +1,5 @@
+-- This file exists for example purposes only, so that you can see this Applescript in the GitHub repository without downloading and installing the .alfredworkflow binary.
+
 -- Set your iDoneThis email address, found here: https://idonethis.com/accounts/settings/emails/
 set senderEmailAddress to "YOUREMAILADDRESS"
 
