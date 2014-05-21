@@ -33,7 +33,7 @@ If you don't want extra iDoneThis emails in your sent box, you'll have to delete
 It's a limited approach, but until iDoneThis releases an API, it's the only way I could get this to work with minimal setup.
 
 
-## Another Option: Use the Gem
+## Another Option: Use the `idid` Gem
 
 The creators of the original iAlfredThis have created [a Ruby gem called `idid`](http://devblog.springest.com/idonethis-from-the-command-line-with-the-idid-gem) which they use to send tasks to iDoneThis directly from the command line.
 
